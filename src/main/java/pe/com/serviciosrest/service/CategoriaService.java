@@ -5,17 +5,11 @@ import java.util.Optional;
 import pe.com.serviciosrest.entity.Categoria;
 
 public interface CategoriaService {
-
+    
     List<Categoria> findAll();
-
     Optional<Categoria> findById(Long id);
-
-    List<Categoria> finByName(String name);
-
+    List<Categoria> findByName(String name);
     Categoria add(Categoria c);
-
     Categoria update(Categoria c);
-
     Categoria delete(Categoria c);
-
 }

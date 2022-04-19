@@ -9,8 +9,8 @@ import pe.com.serviciosrest.entity.Categoria;
 import pe.com.serviciosrest.repository.CategoriaRepository;
 
 @Service
-public class CategoriaServiceImpl implements CategoriaService {
-    
+public class CategoriaServiceImpl implements CategoriaService{
+
     @Autowired
     private CategoriaRepository categoriaRepository;
     
@@ -18,34 +18,33 @@ public class CategoriaServiceImpl implements CategoriaService {
     public List<Categoria> findAll() {
         return categoriaRepository.findAllCustom();
     }
-    
+
     @Override
     public Optional<Categoria> findById(Long id) {
         return categoriaRepository.findById(id);
     }
-    
+
     @Override
-    public List<Categoria> finByName(String name) {
+    public List<Categoria> findByName(String name) {
         return categoriaRepository.findByName(name);
     }
-    
+
     @Override
     public Categoria add(Categoria c) {
         return categoriaRepository.save(c);
     }
-    
+
     @Override
     public Categoria update(Categoria c) {
-        Categoria objcategoria = categoriaRepository.getById(c.getCodigo());
+        Categoria objcategoria=categoriaRepository.getById(c.getCodigo());
         BeanUtils.copyProperties(c, objcategoria);
         return categoriaRepository.save(objcategoria);
     }
-    
+
     @Override
     public Categoria delete(Categoria c) {
-        Categoria objcategoria = categoriaRepository.getById(c.getCodigo());
+        Categoria objcategoria=categoriaRepository.getById(c.getCodigo());
         objcategoria.setEstado(false);
         return categoriaRepository.save(objcategoria);
     }
-    
 }

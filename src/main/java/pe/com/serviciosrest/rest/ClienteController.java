@@ -11,41 +11,42 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pe.com.serviciosrest.entity.Producto;
-import pe.com.serviciosrest.service.ProductoService;
+import pe.com.serviciosrest.entity.Cliente;
+import pe.com.serviciosrest.service.ClienteService;
 
 @RestController
-@RequestMapping("/producto")
-public class ProductoController {
+@RequestMapping("/cliente")
+public class ClienteController {
     
     @Autowired
-    private ProductoService productoService;
+    private ClienteService clienteService;
     
     @GetMapping
-    public List<Producto> findAll(){
-        return productoService.findAll();
+    public List<Cliente> findAll(){
+        return clienteService.findAll();
     }
     
     @PostMapping
-    public Producto add(@RequestBody Producto p){
-        return productoService.add(p);
+    public Cliente add(@RequestBody Cliente c){
+        return clienteService.add(c);
     }
     
     @GetMapping("/{id}")
-    public Optional<Producto> findById(@PathVariable long id){
-        return productoService.findById(id);
+    public Optional<Cliente> findById(@PathVariable Integer id){
+        return clienteService.findById(id);
     }
     
     @PutMapping("/{id}")
-    public Producto update(@PathVariable long id,@RequestBody Producto p){
-        p.setCodigo(id);
-        return productoService.update(p);
+    public Cliente update(@PathVariable Integer id,@RequestBody Cliente c){
+        c.setId(id);
+        return clienteService.update(c);
     }
     
     @DeleteMapping("/{id}")
-    public Producto delete(@PathVariable long id){
-        Producto objproducto=new Producto();
-        objproducto.setCodigo(id);
-        return productoService.delete(Producto.builder().codigo(id).build());
+    public Cliente delete(@PathVariable Integer id){
+        Cliente objcliente=new Cliente();
+        objcliente.setId(id);
+        return clienteService.delete(Cliente.builder().id(id).build());
     }
+
 }

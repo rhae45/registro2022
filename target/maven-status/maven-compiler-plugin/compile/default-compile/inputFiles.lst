@@ -1,14 +1,23 @@
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\entity\Producto.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\repository\CategoriaRepository.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\entity\Cliente.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\rest\request\CategoriaRequest.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\service\CategoriaService.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\repository\ProductoRepository.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\service\CategoriaServiceImpl.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\service\ProductoServiceImpl.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\rest\ProductoController.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\service\ProductoService.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\entity\Categoria.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\ServicioRestApplication.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\entity\Distrito.java
-C:\Users\User\Desktop\ServicioRest\src\main\java\pe\com\serviciosrest\rest\CategoriaController.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\entity\Cliente.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\entity\Producto.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\service\CategoriaService.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\service\ClienteService.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\entity\Categoria.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\service\ClienteServiceImpl.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\service\ProductoService.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\entity\Distrito.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\rest\ProductoController.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\rest\CategoriaController.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\repository\ClienteRepository.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\service\CategoriaServiceImpl.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\service\DistritoServiceImpl.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\rest\request\DistritoRequest.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\service\DistritoService.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\repository\DistritoRepository.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\repository\ProductoRepository.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\ServicioRestApplication.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\service\ProductoServiceImpl.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\rest\request\CategoriaRequest.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\rest\DistritoController.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\rest\ClienteController.java
+C:\Users\User\Desktop\Nueva carpeta\src\main\java\pe\com\serviciosrest\repository\CategoriaRepository.java

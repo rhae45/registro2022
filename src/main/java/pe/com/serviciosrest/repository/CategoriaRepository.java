@@ -6,13 +6,12 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import pe.com.serviciosrest.entity.Categoria;
 
-
-public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
-    //mostrando todos los datos
+public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
+    
     @Query("select c from Categoria c where c.estado='1'")
     List<Categoria> findAllCustom();
     
-    @Query("select c from Categoria c where upper(c.nombre) like upper(:nombre) "
-            + "and c.estado='1'")
+    @Query("select c from Categoria c where upper(c.nombre) like upper(:nombre)"
+            +" and c.estado='1'")
     List<Categoria> findByName(@Param("nombre") String nombre);
 }

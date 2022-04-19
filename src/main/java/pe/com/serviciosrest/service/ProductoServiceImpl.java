@@ -9,11 +9,11 @@ import pe.com.serviciosrest.entity.Producto;
 import pe.com.serviciosrest.repository.ProductoRepository;
 
 @Service
-public class ProductoServiceImpl implements ProductoService {
+public class ProductoServiceImpl implements ProductoService{
 
     @Autowired
     private ProductoRepository productoRepository;
-
+    
     @Override
     public List<Producto> findAll() {
         return productoRepository.findAllCustom();
@@ -25,7 +25,7 @@ public class ProductoServiceImpl implements ProductoService {
     }
 
     @Override
-    public List<Producto> finByName(String name) {
+    public List<Producto> findByName(String name) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -36,16 +36,16 @@ public class ProductoServiceImpl implements ProductoService {
 
     @Override
     public Producto update(Producto p) {
-        Producto objproducto = productoRepository.getById(p.getCodigo());
+        Producto objproducto=productoRepository.getById(p.getCodigo());
         BeanUtils.copyProperties(p, objproducto);
         return productoRepository.save(objproducto);
     }
 
     @Override
     public Producto delete(Producto p) {
-        Producto objproducto = productoRepository.getById(p.getCodigo());
+        Producto objproducto=productoRepository.getById(p.getCodigo());
         objproducto.setEstado(false);
         return productoRepository.save(objproducto);
     }
-
+    
 }

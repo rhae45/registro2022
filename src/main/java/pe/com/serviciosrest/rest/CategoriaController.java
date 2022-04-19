@@ -18,41 +18,41 @@ import pe.com.serviciosrest.service.CategoriaService;
 @RestController
 @RequestMapping("/categoria")
 public class CategoriaController {
-
+    
     @Autowired
     private CategoriaService categoriaService;
-
+    
     @GetMapping
-    public List<Categoria> findAll() {
+    public List<Categoria> findAll(){
         return categoriaService.findAll();
     }
-
+    
     @PostMapping
-    public Categoria add(@RequestBody Categoria c) {
+    public Categoria add(@RequestBody Categoria c){
         return categoriaService.add(c);
     }
-
+    
     @GetMapping("/{id}")
-    public Optional<Categoria> findById(@PathVariable long id) {
+    public Optional<Categoria> findById(@PathVariable long id){
         return categoriaService.findById(id);
     }
-
-    @PostMapping("by-name")
-    public List<Categoria> findByName(@RequestBody CategoriaRequest categoriaRequest) {
-        return categoriaService.finByName(categoriaRequest.getNombre());
+    
+    
+    @GetMapping("by-name")
+    public List<Categoria> findByName(@RequestBody CategoriaRequest categoriaRequest){
+        return categoriaService.findByName(categoriaRequest.getNombre());
     }
-
+    
     @PutMapping("/{id}")
-    public Categoria update(@PathVariable long id, @RequestBody Categoria c) {
+    public Categoria update(@PathVariable long id,@RequestBody Categoria c){
         c.setCodigo(id);
         return categoriaService.update(c);
     }
-
+    
     @DeleteMapping("/{id}")
-    public Categoria delete(@PathVariable long id) {
-        Categoria objcategoria = new Categoria();
+    public Categoria delete(@PathVariable long id){
+        Categoria objcategoria=new Categoria();
         objcategoria.setCodigo(id);
         return categoriaService.delete(Categoria.builder().codigo(id).build());
     }
-
 }
